@@ -74,6 +74,9 @@ document.addEventListener("DOMContentLoaded", () => {
     if (!currentUser) return;
 
     try {
+      console.log("현재 UID:", currentUser.uid);
+      console.log("저장하려는 문서 ID:", `${currentUser.uid}_page1`);
+
       // 저장 중 알림
       Swal.fire({
         title: "저장 중...",

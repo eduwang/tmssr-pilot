@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lesson Play 작성 활동 3</title>
+  <link rel="stylesheet" href="/indexStyles.css" />
+  <link rel="stylesheet" href="/page3Styles.css" />
+</head>
+<body>
+  <div class="top-bar" id="user-info" style="display: flex;">
+    <span id="user-name"></span>
+    <button id="logout-btn">로그아웃</button>
+  </div>
+
+  <div class="page1-container">
+    <div class="scenario-box">
+      <h2 class="scenario-title">활동 3 - 문제 상황 예시</h2>
+      <p class="scenario-description">
+        3학년 1반 수학 시간입니다. 학생들은 분수의 덧셈 단원을 공부하고 있으며,
+        교사는 그림과 실생활 예시를 통해 학생들이 개념을 이해하도록 도와주려 합니다.
+      </p>
+    </div>
+
+    <div class="conversation-log" id="conversation-log"></div>
+
+    <div class="chat-input-section">
+      <input type="text" id="speaker-input" placeholder="이름 (예: 교사, 민수 등)" />
+      <input type="text" id="message-input" placeholder="대화를 입력하세요" />
+      <button class="nav-button" id="add-message-btn">입력</button>
+      <button class="nav-button undo-btn" id="undo-btn" title="되돌리기">&#x21A9;</button>
+    </div>
+    <div class="button-wrapper">
+        <button class="nav-button" id="submit-btn">활동 완료하기</button>
+        <a href="/index.html" class="nav-button back-button">돌아가기</a>
+
+    </div>
+
+  </div>
+
+  <script type="module" src="/src/page3Main.js"></script>
+</body>
+</html>

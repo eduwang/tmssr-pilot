@@ -1,0 +1,84 @@
+/* 배경 및 폰트 설정 - indexStyles와 동일하게 맞춤 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #e0f7fa, #b3e5fc);
+}
+
+/* 본문 컨테이너 */
+.page1-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffffcc;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 시나리오 박스 */
+.scenario-box {
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.scenario-title {
+  margin-top: 0;
+  color: #1976d2;
+}
+
+.conversation-log {
+  border: 1px solid #ccc;
+  background: #ffffff;
+  min-height: 200px;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+/* 채팅 입력창 */
+.chat-input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.chat-input-section input {
+  padding: 8px;
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
+.undo-btn {
+  background-color: #9e9e9e;
+  padding: 8px 12px;
+}
+
+.undo-btn:hover {
+  background-color: #757575;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* 버튼 사이 간격 */
+  margin-top: 20px;
+}
+
+
+.back-button {
+  background-color: #9e9e9e;
+}
+
+.back-button:hover {
+  background-color: #757575;
+}
+
+/* nav-button 클래스는 indexStyles.css에서 이미 정의됨 */
+
+/* 로그인/로그아웃 바는 indexStyles.css에 정의되어 있음 */

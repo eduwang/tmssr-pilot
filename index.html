@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson Play</title>
+    <link rel="stylesheet" href="/indexStyles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- 로그인 후 우측 상단 표시 -->
+      <div class="top-bar" id="user-info" style="display: none;">
+        <span id="user-name"></span>
+        <button id="logout-btn">로그아웃</button>
+      </div>
+      <div class="container" id="main-content">
+        <h1 class="title">Lesson Play</h1>
+        <p class="description">
+          AI 기반 대화 시뮬레이션을 통해 수업 장면을 설계하고 분석할 수 있는 웹 앱입니다.
+        </p>
+
+        <!-- 버튼 wrapper 추가 -->
+        <div class="login-btn-wrapper">
+          <button id="login-btn" class="nav-button">Google 로그인</button>
+        </div>
+
+        <div class="button-group" id="page-buttons" style="display: none;">
+          <a href="/page1.html" class="nav-button">페이지 1</a>
+          <a href="/page2.html" class="nav-button">페이지 2</a>
+          <a href="/page3.html" class="nav-button">페이지 3</a>
+          <a id="admin-btn" href="/admin.html" class="nav-button" style="display: none;">관리자 페이지</a>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script type="module" src="/src/indexMain.js"></script>
+  </body>
+
+</html>

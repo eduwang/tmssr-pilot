@@ -1,10 +1,10 @@
 import { auth } from "./firebaseConfig";
 import { signOut } from "firebase/auth";
-import { getFirestore, doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "./firebaseConfig.js";
 import { observeAuthState } from "./authHelpers";
 import Swal from "sweetalert2";
 
-const db = getFirestore();
 let currentUser = null;
 let conversation = [];
 

@@ -116,7 +116,21 @@ function renderPageBox(title, data, pageKey) {
 
   const pageTitle = document.createElement("div");
   pageTitle.classList.add("page-title");
-  pageTitle.textContent = title;
+
+  // 시간 포맷 추가
+  let formattedTime = "";
+  if (data?.updatedAt?.toDate) {
+    const date = data.updatedAt.toDate();
+    formattedTime = ` (${date.toLocaleString('ko-KR', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    })})`;
+  }
+
+  pageTitle.textContent = `${title}${formattedTime}`;
   box.appendChild(pageTitle);
 
   if (!data) {

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const userName = document.getElementById("user-name");
   const pageButtons = document.getElementById("page-buttons");
   const adminBtn = document.getElementById("admin-btn"); // ✅ 관리자 버튼
-  const adminUids = ["EKNhm9JciagtD3KzW3SoHREDKV73", "uid2", "uid3"]; // 예: ["abc123", "xyz789", "HW_WANG_UID"]
+  const adminUids = ["EKNhm9JciagtD3KzW3SoHREDKV73", "f1hiQjJJh8eqW87st7fCFaEeTGk1", "NjUNvEVGRCUUarEWFTuj52RIlBy2"]; // 예: ["abc123", "xyz789", "HW_WANG_UID"]
 
 
 

@@ -10,7 +10,7 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 // 🔐 관리자 UID만 접근 허용
-const allowedAdmins = ["EKNhm9JciagtD3KzW3SoHREDKV73"];
+const allowedAdmins = ["EKNhm9JciagtD3KzW3SoHREDKV73", "f1hiQjJJh8eqW87st7fCFaEeTGk1", "NjUNvEVGRCUUarEWFTuj52RIlBy2"];
 
 const userSelect = document.getElementById("user-select");
 const resultsContainer = document.getElementById("results-container");
